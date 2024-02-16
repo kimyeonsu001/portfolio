@@ -1,392 +1,23 @@
 @import url(./reset.css);
-@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Noto+Sans+KR:wght@100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
 
 /*common*/
 .wrap {
-  background: linear-gradient(#85d5c2, #f0f0b0);
-  width: 100%;
-  height: 400vh;
-  font-family: "Montserrat";
+    background:linear-gradient(#85D5C2,#F0F0B0);
+    width: 100%;
+    height: 400vh;
+    font-family: "Montserrat"
 }
 
 /*home*/
 .home {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
-.home-tit {
-  width: 50%;
-  height: 150px;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  text-align: center;
-  transform: translatex(-50%);
-}
-.home-tit > h3 {
-  font-size: 30px;
-}
-.home-tit > h1 {
-  font-size: 70px;
-}
-.home-menu {
-  width: 60%;
-  height: 100px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translatex(-50%);
-}
-.home-menu ul {
-  display: flex;
-  justify-content: space-around;
-}
-.home-menu li {
-  width: 200px;
-  height: 100px;
-  text-align: center;
-  margin-top: 15px;
-  background: #fff;
-}
-.home-menu li:hover {
-  background: #5cad9a;
-}
-
-.home-menu a {
-  font-size: 40px;
-}
-
-.home-menu h3 {
-  font-size: 20px;
-  margin-top: 10px;
-}
-
-.ball {
-  position: absolute;
-  left: -30%;
-  bottom: 5%;
-  font-size: 60px;
-  animation: ball ease-in 10s infinite;
-}
-@keyframes ball {
-  0% {
-    left: -25%;
-    transform: rotate(-360deg);
-  }
-  100% {
-    left: 125%;
-    transform: rotate(3600deg);
-  }
-}
-
-/*introduce*/
-.introduce {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
-.box {
-  width: 70%;
-  height: 80vh;
-  display: flex;
-  background: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.box-img {
-  width: 50%;
-  height: 100%;
-}
-.box-img img {
-  width: 60%;
-  height: 70%;
-  margin: 20%;
-}
-.box-tit {
-  width: 50%;
-  height: 100%;
-  text-align: center;
-}
-.box-tit h1 {
-  position: absolute;
-  right: -25%;
-  top: 10%;
-  color: #3d7064;
-}
-.box-tit > p {
-  position: absolute;
-  top: 25%;
-  color: #64a092;
-}
-.tag {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 35%;
-  left: 58%;
-}
-.tag div {
-  width: 180px;
-  height: 50px;
-  line-height: 37px;
-  padding: 5px;
-  margin-bottom: 10px;
-  border: 3px solid #3d7064;
-  border-radius: 30px;
-  font-size: 20px;
-  font-weight: bold;
-  color: #cbb539;
-}
-.tag div:hover {
-  background: #3d7064;
-}
-.tag span {
-  position: absolute;
-  left: 40%;
-  font-size: 50px;
-}
-.introduce h1 {
-  position: absolute;
-  bottom: 10%;
-  left: 10%;
-  font-size: 50px;
-}
-.introduce h2 {
-  position: absolute;
-  top: 7%;
-  right: 8%;
-  font-size: 40px;
-}
-.introduce h3 {
-  position: absolute;
-  top: 20%;
-  left: 5%;
-  font-size: 50px;
-}
-/*works*/
-.works {
-  position: relative;
-  color: #000000;
-  width: 100%;
-  height: 100vh;
-}
-.works h2 {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  text-shadow: 0 0 10px #fffc48;
-  font-size: 40px;
-}
-.works h3 {
-  position: absolute;
-  bottom: 10%;
-  right: 7%;
-  text-shadow: 0 0 10px #efda4f;
-  font-size: 40px;
-}
-.works h2,
-.works h3 {
-  animation: stars linear 5s infinite;
-}
-@keyframes stars {
-  0% {
-    opacity: 1;
-    scale: 1;
-  }
-  30% {
-    opacity: 0.8;
-    scale: 1;
-  }
-  60% {
-    opacity: 0.8;
-    scale: 1.1;
-  }
-  100% {
-    opacity: 1;
-    scale: 1;
-  }
-}
-
-.works-inner {
-  width: 80%;
-  height: 500px;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-}
-.works-inner input[name="tabmenu"] {
-  display: none;
-}
-.works-inner h1 {
-  text-align: center;
-  font-size: 50px;
-}
-.tabs {
-  width: 800px;
-  height: 400px;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-  /* border-bottom: 1px solid #000000;
-    border-top: 1px solid #000000; */
-}
-.items {
-  width: 2400px;
-  height: 400px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: all 0.5s;
-  overflow: hidden;
-}
-.items div {
-  float: left;
-  width: 800px;
-  height: 400px;
-  text-align: center;
-  padding-top: 3%;
-}
-.items div img {
-  width: 330px;
-  height: 200px;
-  margin: 10px;
-}
-.items div p b {
-  display: block;
-  font-size: 20px;
-  color: #000000;
-}
-
-.btn {
-  text-align: center;
-}
-.btn label {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  margin-top: 30px;
-
-  font-size: 33px;
-  border-radius: 100%;
-  cursor: pointer;
-}
-.btn label:nth-child(2) {
-  margin: 20px;
-}
-input[id="tab1"]:checked ~ .tabs .items {
-  left: 0;
-}
-input[id="tab2"]:checked ~ .tabs .items {
-  left: -800px;
-}
-input[id="tab3"]:checked ~ .tabs .items {
-  left: -1600px;
-}
-
-input[id="tab1"]:checked ~ .btn label[for="tab1"] {
-  border-radius: 100%;
-  opacity: 70%;
-  font-size: 28px;
-}
-input[id="tab2"]:checked ~ .btn label[for="tab2"] {
-  border-radius: 100%;
-  opacity: 70%;
-  font-size: 28px;
-}
-input[id="tab3"]:checked ~ .btn label[for="tab3"] {
-  border-radius: 100%;
-  opacity: 70%;
-  font-size: 28px;
-}
-
-/*contact*/
-
-.contact {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-}
-.contact-inner {
-  width: 100%;
-  height: 80vh;
-  margin: 0 auto;
-}
-
-.inner-top {
-  font-size: 30px;
-  color: #000000;
-  position: relative;
-  width: 50%;
-  height: 200px;
-  margin: 30px auto;
-  background: #fff;
-}
-
-.right img,
-.right h3 {
-  position: absolute;
-  top: 10%;
-  left: 70%;
-  transform: translatex(-50%);
-}
-
-.left img,
-.left h1 {
-  width: 400px;
-  position: absolute;
-  top: 45%;
-  left: 10%;
-  font-size: 50px;
-}
-.left h1 {
-  top: 50%;
-  left: 20%;
-}
-
-.inner-bottom {
-  width: 50%;
-  margin: 20px auto;
-  height: 200px;
-
-  display: flex;
-  justify-content: space-around;
-}
-.inner-bottom a {
-  font-size: 90px;
-
-  padding: 10px;
-  margin: 30px;
-}
-.bottom-tr {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  font-size: 40px;
-}
-
-/*#####################mobile##########################*/
-
-@media screen and (min-width: 380px) {
-  .wrap {
-    background: linear-gradient(#85d5c2, #f0f0b0);
-    width: 100%;
-    height: 400vh;
-    font-family: "Montserrat";
-  }
-
-  /*home*/
-  .home {
     width: 100%;
     height: 100vh;
     position: relative;
-  }
-  .home-tit {
+   
+}
+.home-tit {
     width: 50%;
     height: 150px;
     position: absolute;
@@ -394,70 +25,73 @@ input[id="tab3"]:checked ~ .btn label[for="tab3"] {
     left: 50%;
     text-align: center;
     transform: translatex(-50%);
-  }
-  .home-tit > h3 {
+    
+}
+.home-tit > h3 {
     font-size: 30px;
-  }
-  .home-tit > h1 {
+}
+.home-tit > h1 {
     font-size: 70px;
-  }
-  .home-menu {
+}
+.home-menu {
     width: 60%;
     height: 100px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translatex(-50%);
-  }
-  .home-menu ul {
+  
+}
+.home-menu ul {
     display: flex;
     justify-content: space-around;
-  }
-  .home-menu li {
+}
+.home-menu li {
     width: 200px;
     height: 100px;
     text-align: center;
     margin-top: 15px;
     background: #fff;
-  }
-  .home-menu li:hover {
+}
+.home-menu li:hover {
     background: #5cad9a;
-  }
+}
 
-  .home-menu a {
-    font-size: 30px;
-  }
+.home-menu a {
+    font-size: 40px;
+}
 
-  .home-menu h3 {
+
+.home-menu h3 {
     font-size: 20px;
     margin-top: 10px;
-  }
+}
 
-  .ball {
+.ball {
     position: absolute;
     left: -30%;
     bottom: 5%;
     font-size: 60px;
     animation: ball ease-in 10s infinite;
-  }
-  @keyframes ball {
+}
+@keyframes ball {
     0% {
       left: -25%;
       transform: rotate(-360deg);
     }
     100% {
-      left: 125%;
+        left: 125%;
       transform: rotate(3600deg);
     }
-  }
+}
 
-  /*introduce*/
-  .introduce {
+/*introduce*/
+.introduce {
     width: 100%;
     height: 100vh;
     position: relative;
-  }
-  .box {
+}
+.box {
     width: 70%;
     height: 80vh;
     display: flex;
@@ -465,41 +99,45 @@ input[id="tab3"]:checked ~ .btn label[for="tab3"] {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .box-img {
+    transform: translate(-50%,-50%);
+}
+.box-img {
     width: 50%;
-    height: 60%;
-  }
-  .box-img img {
+    height: 100%;
+ 
+}
+.box-img img {
     width: 60%;
     height: 70%;
     margin: 20%;
-  }
-  .box-tit {
+   
+}
+.box-tit {
     width: 50%;
     height: 100%;
     text-align: center;
-  }
-  .box-tit h1 {
+    
+}
+.box-tit h1 {
     position: absolute;
     right: -25%;
     top: 10%;
     color: #3d7064;
-  }
-  .box-tit > p {
+}
+.box-tit> p {
     position: absolute;
     top: 25%;
     color: #64a092;
-  }
-  .tag {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 35%;
-    left: 58%;
-  }
-  .tag div {
+}
+.tag {
+width: 100%;
+height: 100%;
+position: absolute;
+top: 35%;
+left: 58%;
+
+}
+.tag div {
     width: 180px;
     height: 50px;
     line-height: 37px;
@@ -510,85 +148,84 @@ input[id="tab3"]:checked ~ .btn label[for="tab3"] {
     font-size: 20px;
     font-weight: bold;
     color: #cbb539;
-  }
-  .tag div:hover {
+}
+.tag div:hover {
     background: #3d7064;
-  }
-  .tag span {
+}
+.tag  span {
     position: absolute;
     left: 40%;
     font-size: 50px;
-  }
-  .introduce h1 {
+
+}
+.introduce h1 {
     position: absolute;
     bottom: 10%;
     left: 10%;
     font-size: 50px;
-  }
-  .introduce h2 {
+}
+.introduce h2 {
     position: absolute;
     top: 7%;
     right: 8%;
     font-size: 40px;
-  }
-  .introduce h3 {
+}
+.introduce h3 {
     position: absolute;
     top: 20%;
     left: 5%;
     font-size: 50px;
-  }
-  /*works*/
-  .works {
+}
+/*works*/
+.works {
     position: relative;
     color: #000000;
     width: 100%;
     height: 100vh;
-  }
-  .works h2 {
+}
+.works h2 {
     position: absolute;
     top: 10%;
     left: 10%;
     text-shadow: 0 0 10px #fffc48;
     font-size: 40px;
-  }
-  .works h3 {
+}
+.works h3 {
     position: absolute;
     bottom: 10%;
     right: 7%;
     text-shadow: 0 0 10px #efda4f;
     font-size: 40px;
-  }
-  .works h2,
-  .works h3 {
+}
+.works h2, .works h3 {
     animation: stars linear 5s infinite;
-  }
-  @keyframes stars {
+}
+@keyframes stars  {
     0% {
-      opacity: 1;
-      scale: 1;
+        opacity: 1;
+        scale: 1;
+    } 30% {
+        opacity: 0.8;
+        scale: 1;
+    } 60% {
+        opacity: 0.8;
+        scale: 1.1;
+    } 100% {
+        opacity: 1;
+        scale: 1;
     }
-    30% {
-      opacity: 0.8;
-      scale: 1;
-    }
-    60% {
-      opacity: 0.8;
-      scale: 1.1;
-    }
-    100% {
-      opacity: 1;
-      scale: 1;
-    }
-  }
+}
 
-  .works-inner {
+.works-inner {
     width: 80%;
     height: 500px;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
+   position: absolute;
+   top: 45%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   padding: 20px;
+  
+  
   }
   .works-inner input[name="tabmenu"] {
     display: none;
@@ -604,7 +241,7 @@ input[id="tab3"]:checked ~ .btn label[for="tab3"] {
     overflow: hidden;
     position: relative;
     /* border-bottom: 1px solid #000000;
-      border-top: 1px solid #000000; */
+    border-top: 1px solid #000000; */
   }
   .items {
     width: 2400px;
@@ -614,6 +251,7 @@ input[id="tab3"]:checked ~ .btn label[for="tab3"] {
     left: 0;
     transition: all 0.5s;
     overflow: hidden;
+    
   }
   .items div {
     float: left;
@@ -621,18 +259,21 @@ input[id="tab3"]:checked ~ .btn label[for="tab3"] {
     height: 400px;
     text-align: center;
     padding-top: 3%;
+   
   }
   .items div img {
     width: 330px;
     height: 200px;
     margin: 10px;
+
+   
   }
   .items div p b {
     display: block;
     font-size: 20px;
     color: #000000;
   }
-
+  
   .btn {
     text-align: center;
   }
@@ -641,7 +282,7 @@ input[id="tab3"]:checked ~ .btn label[for="tab3"] {
     width: 30px;
     height: 30px;
     margin-top: 30px;
-
+    
     font-size: 33px;
     border-radius: 100%;
     cursor: pointer;
@@ -658,7 +299,7 @@ input[id="tab3"]:checked ~ .btn label[for="tab3"] {
   input[id="tab3"]:checked ~ .tabs .items {
     left: -1600px;
   }
-
+  
   input[id="tab1"]:checked ~ .btn label[for="tab1"] {
     border-radius: 100%;
     opacity: 70%;
@@ -681,14 +322,18 @@ input[id="tab3"]:checked ~ .btn label[for="tab3"] {
     width: 100%;
     height: 100vh;
     display: flex;
+   
   }
   .contact-inner {
     width: 100%;
     height: 80vh;
     margin: 0 auto;
+  
+
   }
 
   .inner-top {
+ 
     font-size: 30px;
     color: #000000;
     position: relative;
@@ -696,18 +341,18 @@ input[id="tab3"]:checked ~ .btn label[for="tab3"] {
     height: 200px;
     margin: 30px auto;
     background: #fff;
+
   }
 
-  .right img,
-  .right h3 {
+  .right img , .right h3 {
     position: absolute;
     top: 10%;
     left: 70%;
     transform: translatex(-50%);
   }
+ 
 
-  .left img,
-  .left h1 {
+  .left  img , .left h1 {
     width: 400px;
     position: absolute;
     top: 45%;
@@ -730,13 +375,15 @@ input[id="tab3"]:checked ~ .btn label[for="tab3"] {
   .inner-bottom a {
     font-size: 90px;
 
-    padding: 10px;
-    margin: 30px;
+
+
+   padding: 10px;
+   margin: 30px;
   }
   .bottom-tr {
     width: 100%;
     display: flex;
     justify-content: space-between;
     font-size: 40px;
+  
   }
-}
